@@ -23,3 +23,5 @@ node {
   stage('Deploy to Tomcat') {
     bat 'copy target\\sparkjava.war "C:\\apache-tomcat-8.5.64\\webapps\\sparkjava.war"'
   }
+  
+ } 
