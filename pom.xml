@@ -8,7 +8,14 @@
 	<artifactId>sparkjava-hello-world</artifactId>
 	<version>1.0</version>
 	<packaging>war</packaging>
-
+	
+	<distributionManagement>
+		<snapshotRepository>
+		<id>snapshots</id>
+		<name>DESKTOP-1P7TPHD-snapshots</name>
+		<url>http://localhost:8081/artifactory/libs-snapshot-local</url>
+ 	    </snapshotRepository>
+    </distributionManagement>
 	<dependencies>
 		<dependency>
 			<groupId>com.sparkjava</groupId>
