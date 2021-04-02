@@ -5,7 +5,7 @@ node {
    //def mvnHome = 'C:\\apache-maven-3.5.4'
   
   stage('SCM CheckOut') {
-    git 'https://github.com/ManuelKumar/timezone.git'
+    git 'https://github.com/ManuelKumar/sparkjava.git'
   }
   
   stage('Build Stage') {
@@ -21,5 +21,5 @@ node {
   }  
   
   stage('Deploy to Tomcat') {
-    bat 'copy target\\timezone.war "C:\\apache-tomcat-8.5.64\\webapps\\timezone.war"'
+    bat 'copy target\\sparkjava.war "C:\\apache-tomcat-8.5.64\\webapps\\sparkjava.war"'
   }
